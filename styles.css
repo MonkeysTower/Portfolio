@@ -1,0 +1,205 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  padding-top: 60px;
+  background-color: #1a1a1a;
+  color: white;
+  line-height: 1.6;
+}
+
+/* Header Styles */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: #BC0022;
+  padding: 0px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .logo {
+  font-size: 24px;
+  margin: 0;
+  font-weight: bold;
+  color: white;
+}
+
+.header .nav a {
+  margin-left: 15px;
+  color: white;
+  text-decoration: none;
+}
+
+.header .nav a:hover {
+  text-decoration: underline;
+}
+
+/* Section Styles */
+section, div {
+  padding: 20px 20px;
+  margin: 1rem 1rem 1rem 1rem;
+}
+
+h2 {
+  margin-bottom: 15px;
+  color: #BC0022;
+}
+h3 {
+  margin-bottom: 15px;
+  color: #BC0022;
+}
+.aboutAndCertificates {
+  display: flex;
+  justify-content: space-between;
+}
+/* About Me Section */
+.about {
+  scroll-margin-top: 95px;
+  margin: 0;
+  padding: 20px;
+  padding-bottom: 40px;
+  width: 40%;
+}
+.profile-photo {
+  width: 15rem;
+  height: 20rem;
+}
+
+/* Certificates Section */
+.certificates {
+  scroll-margin-top: 80px;
+  background-color: #333;
+  width: 58%;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 0;
+  margin-bottom: 20px;
+}
+.certificates-header div {
+  padding: 0px;
+  margin: 0;
+}
+.certificates-header {
+  display: flex;
+  padding: 0px;
+  margin: 0;
+  justify-content: space-between;
+}
+.gear-container {
+  display: flex;
+  padding: 0px;
+  margin: 0;
+  align-items: center;
+  position: relative;
+}
+
+.gear {
+  width: 70px;
+  height: 70px;
+}
+
+.gear-left {
+  position: relative;
+  top: -9px;
+  animation: rotate-leftside 30s linear infinite;
+}
+
+.gear-right {
+  position: relative;
+  left: -11px;
+  animation: rotate-rightside 30s linear infinite;
+}
+
+@keyframes rotate-leftside {
+  from {
+      transform: rotate(-4deg);
+  }
+  to {
+      transform: rotate(356deg);
+  }
+}
+@keyframes rotate-rightside {
+  from {
+      transform: rotate(0deg);
+  }
+  to {
+      transform: rotate(-360deg);
+  }
+}
+
+.certificates ul {
+  list-style: circle;
+  margin-left: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.certificates li {
+  margin-bottom: 10px;
+}
+.education-option{
+  padding: 0px;
+  margin: 0px;
+  margin-bottom: 20px;
+}
+/* Work Experience Section */
+.experience {
+  scroll-margin-top: 80px;
+  background-color: #333;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.company-name,.job-years,.job-name {
+  font-size: large;
+  margin-bottom: 15px;
+  color: #BC0022;
+}
+
+/* Photography Gallery Section */
+.gallery {
+  scroll-margin-top: 80px;
+}
+
+.gallery .photo-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  gap: 10px;
+}
+
+.gallery .photo-item {
+  background-color: #444;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  color: white;
+  font-size: 18px;
+}
+
+/* Contact Section */
+.contact h2 {
+  margin-bottom: 5px;
+  color: white;
+}
+.contact {
+  background-color: #BC0022;
+  color: white;
+  padding: 20px;
+  margin: 0px;
+  text-align: center;
+}
